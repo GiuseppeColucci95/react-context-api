@@ -1,4 +1,5 @@
-import { useEffect, useState } from "react"
+import { useEffect, useState } from "react";
+import PostPage from "./components/PostPage";
 
 export default function App() {
 
@@ -20,21 +21,7 @@ export default function App() {
     <>
       <div className="container my-5">
 
-        <h1 className="text-center">React Context API</h1>
-
-        <div className="row mt-5">
-
-          {
-            posts.map(post => (
-              <div className="col">
-                <div className="card h-100">
-                  <h1>{post.title}</h1>
-                  <p>{post.content}</p>
-                </div>
-              </div>
-            ))
-          }
-        </div>
+        <PostPage></PostPage>
       </div>
     </>
   )
