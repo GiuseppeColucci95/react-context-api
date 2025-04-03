@@ -1,15 +1,17 @@
 import { useEffect, useState } from "react";
 import PostPage from "./components/PostPage";
-import PostsContext from "./contexts/postsContext";
 
 import { AlertProvider } from "./contexts/alertContext";
+import { PostsProvider } from "./contexts/postsContext";
 
 export default function App() {
 
   return (
     <>
       <AlertProvider>
-        <PostPage></PostPage>
+        <PostsProvider>
+          <PostPage></PostPage>
+        </PostsProvider>
       </AlertProvider>
     </>
   )
