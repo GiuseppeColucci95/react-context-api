@@ -15,7 +15,6 @@ export default function App() {
       });
   }, []);
 
-
   return (
     <>
       <PostsContext.Provider value={{ posts: posts }}>

@@ -10,7 +10,6 @@ export default function PostPage() {
 
         <PostList></PostList>
       </div>
-
     </>
   );
 }
