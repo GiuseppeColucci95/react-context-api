@@ -1,4 +1,6 @@
 @import 'bootstrap';
+@import 'bootstrap-icons';
+
 
 .alert-container {
   margin: 1rem auto;

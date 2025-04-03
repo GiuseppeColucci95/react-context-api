@@ -1,12 +1,11 @@
-import { useContext } from "react";
+import { useContext, useState, useEffect } from "react";
 import PostsContext from "../contexts/postsContext";
 import PostCard from "./PostCard";
 
+
 export default function PostList() {
 
-  const { posts } = useContext(PostsContext);
-
-  console.log(posts);
+  //const { posts } = useContext(PostsContext);
 
 
   return (
