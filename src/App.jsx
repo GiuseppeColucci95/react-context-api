@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import PostPage from "./components/PostPage";
+import PostsContext from "./contexts/postsContext";
 
 export default function App() {
 
@@ -10,8 +11,6 @@ export default function App() {
     fetch('http://localhost:3000/posts')
       .then(res => res.json())
       .then(data => {
-        console.log(data);
-
         setPosts(data);
       });
   }, []);
@@ -19,10 +18,9 @@ export default function App() {
 
   return (
     <>
-      <div className="container my-5">
-
+      <PostsContext.Provider value={{ posts: posts }}>
         <PostPage></PostPage>
-      </div>
+      </PostsContext.Provider>
     </>
   )
 }

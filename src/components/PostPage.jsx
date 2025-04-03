@@ -4,9 +4,13 @@ export default function PostPage() {
 
   return (
     <>
-      <h1 className="text-center">React Context API</h1>
+      <div className="container my-5">
 
-      <PostList></PostList>
+        <h1 className="text-center">React Context API</h1>
+
+        <PostList></PostList>
+      </div>
+
     </>
   );
 }
